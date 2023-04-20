@@ -1,0 +1,14 @@
+<div id = 'menu'>
+    <nav>
+    
+        <ul>
+            <li> <a href= "#" >Justine</a></li>
+            {% for cat in listcat %} 
+            <li> <a href= "/cat/{{cat}}" >{{cat}} </a></li>
+
+            {% endfor %}             
+            <li> <a href= "/s/contact" >Contact</a></li> 
+        </ul>
+
+    </nav> <!-- convention pour faciliter navigation -->
+</div>

@@ -1,0 +1,134 @@
+@keyframes param {
+  0% {transform: translate(0,0);}   
+  100% {transform: translate(-100%,0);}
+}  
+  
+  body{
+    background:white;
+    font-size:10px;
+    font-family: 'helvetica', sans-serif;
+
+  }
+ 
+#menu ul{
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+
+ } 
+ 
+ #menu ul li:first-of-type{
+  font-size: 30px;
+
+  
+ } 
+
+ #menu ul li a{
+text-decoration: none;
+color: #000; 
+font-size: 30px;
+text-transform:uppercase;
+display: inline-block;                /* déclare le modèle de "boite en ligne" */
+padding-left: 100%;                 /* placement du texte défilant à droite du contenant  p  */
+white-space: nowrap;              /* pas de passage à la ligne */ 
+padding-right: 50px;                /* facultatif ; crée une attente à la réapparition */
+animation: param 20s infinite linear; 
+ } 
+
+ #menu ul li:hover {
+  background: red;
+   } 
+
+ #menu ul li:hover a{
+  text-decoration: underline;
+   } 
+
+.winfo{
+
+    text-align: center;
+   
+    
+}
+  .work{
+    position: relative;
+    overflow: hidden;
+   }
+  
+#works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+#works a {
+    text-decoration: none;
+    color: #000;
+
+ }
+ .wing {
+  overflow: hidden;
+  height: 250px;
+  display: grid;
+  margin: 3%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+  cursor: move;
+  }
+  .wing img{
+    max-width: 100%;
+    display: block;
+    justify-self: center;
+    align-self: center;
+    place-self: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+    cursor: move;
+  }
+  .work:hover .wing img{
+    opacity: 100%;
+    filter: blur(10px);
+    filter: morphology; 
+   }
+  h2.wtitle{
+   font-style: normal;
+   text-transform:uppercase;
+   
+  }
+  .winfo .wdate{
+   color:blueviolet;
+  }
+
+
+  #gal {
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+   }
+
+   #gal .sing {
+    min-height: 150px;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+   }
+
+
+   #gal .sing img{
+    width: 200%;
+   }
+
+   .fullsize {
+   grid-column: span 4;
+   height: auto!important;  
+  }
+  .fullsize img{
+    height: auto!important;  
+    max-width: 100%;
+   
+   }
+ 
