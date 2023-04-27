@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.config['APPLICATION_ROOT']= '/CODEB3'
 app.config.from_object(__name__)
 pages = FlatPages(app)
-
+application = app
 
 pages.get('foo')
 
